@@ -1,0 +1,65 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+header {
+    width: 100%;
+    background-color: #4CAF50;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.drawing-section, .result-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drawing-area {
+    border: 5px solid #333;
+    background-image: url('spiral-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* filter: blur(2px); */
+}
+
+.output {
+    font-size: 20px;
+    border: 5px solid gray;
+    padding: 30px;
+    width: 400px;
+    height: 100px;
+}
+
+.output-text {
+    color: black;
+}
+
+.result-text {
+    font-size: 30px;
+}
+
+.preview-images {
+    border: 5px solid black;
+    margin: 5px;
+    margin-bottom: 20px;
+}

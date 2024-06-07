@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parkinson Early Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Parkinson Early Detection</h1>
+    </header>
+    <main class="container">
+        <section class="drawing-section">
+            <canvas class="drawing-area" id="drawingCanvas" width="448" height="448"></canvas>
+            <div class="controls">
+                <button id="clearButton">Clear</button>
+                <button id="predictButton">Predict</button>
+                <button id="seecanvas">See</button>
+                <button id="saveButton">Save</button>
+            </div>
+        </section>
+        <section class="result-section">
+            <div class="preview-images">
+                <img id="previewImage" src="white.jpg" alt="Sent image" width="224" height="224" />
+                <img id="previewImage2" src="white.jpg" alt="Preview canvas's image" width="224" height="224">
+            </div>
+            <div class="output" id="output_text">
+                <div id="result" class="result-text"></div>
+                <br>
+                <div id="details"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
