@@ -19,7 +19,7 @@ device = torch.device('cpu')
 
 model = models.vgg16()
 model.classifier[6] = nn.Linear(4096, 2)
-model.load_state_dict(torch.load('backend/model_vgg16.pth' , map_location=device))
+model.load_state_dict(torch.load('model\model_vgg16.pth' , map_location=device))
 
 model.eval()
 
@@ -55,7 +55,7 @@ async def predict(file: UploadFile = File(...)):
 
     image = background2white(image).convert("RGB")
     
-    image.save('backend\input.jpg')
+    # image.save('backend\input.jpg')
     
     print(image.size)
     print()
