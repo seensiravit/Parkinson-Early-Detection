@@ -5,9 +5,6 @@ from torchvision import models
 import torch.nn as nn
 
 import numpy as np
-import matplotlib.pyplot as plt
-
-import cv2
 
 from PIL import Image
 from fastapi import FastAPI, UploadFile, File
@@ -19,7 +16,7 @@ device = torch.device('cpu')
 
 model = models.vgg16()
 model.classifier[6] = nn.Linear(4096, 2)
-model.load_state_dict(torch.load('model\model_vgg16.pth' , map_location=device))
+model.load_state_dict(torch.load('model_vgg16.pth' , map_location=device))
 
 model.eval()
 
