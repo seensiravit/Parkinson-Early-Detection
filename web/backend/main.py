@@ -55,7 +55,7 @@ async def predict(file: UploadFile = File(...)):
 
     image = background2white(image).convert("RGB")
     
-    # image.save('backend\input.jpg')
+    # image.save('web/backend/input.jpg')
     
     print(image.size)
     print()
