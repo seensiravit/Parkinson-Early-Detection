@@ -1,0 +1,13 @@
+os0==2.0.1
+glob2==0.7
+torch==2.3.1
+torchvision==0.18.1
+numpy==1.26.4
+pillow==10.3.0
+matplotlib==3.9.0
+opencv-python==4.10.0.82
+google-colab==1.0.0
+scikit-learn==1.5.0
+tqdm==4.66.4
+fastapi==0.111.0
+uvicorn==0.30.1
